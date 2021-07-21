@@ -35,10 +35,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_ARGON_ITERATIONS   3
 
 //Number of parallel lanes for Cache initialization.
-#define RANDOMX_ARGON_LANES        1
+#define RANDOMX_ARGON_LANES        2
 
 //Argon2d salt
-#define RANDOMX_ARGON_SALT         "RandomX\x03"
+#define RANDOMX_ARGON_SALT         "RandomX-Graft\x01"
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
 #define RANDOMX_CACHE_ACCESSES     8
@@ -53,7 +53,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_DATASET_EXTRA_SIZE 33554368
 
 //Number of instructions in a RandomX program. Must be divisible by 8.
-#define RANDOMX_PROGRAM_SIZE       256
+#define RANDOMX_PROGRAM_SIZE       280
 
 //Number of iterations during VM execution.
 #define RANDOMX_PROGRAM_ITERATIONS 2048
@@ -96,8 +96,8 @@ Total sum of frequencies must be 256
 #define RANDOMX_FREQ_INEG_R         2
 #define RANDOMX_FREQ_IXOR_R        15
 #define RANDOMX_FREQ_IXOR_M         5
-#define RANDOMX_FREQ_IROR_R         8
-#define RANDOMX_FREQ_IROL_R         2
+#define RANDOMX_FREQ_IROR_R         7
+#define RANDOMX_FREQ_IROL_R         3
 #define RANDOMX_FREQ_ISWAP_R        4
 
 //Floating point instructions
